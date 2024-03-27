@@ -1,5 +1,9 @@
 .mainDiv {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .city {
   font-size: 30px;
@@ -17,4 +21,7 @@
 select {
   margin-right: 8px;
   padding: 8px;
+}
+.testDiv {
+  margin-top: 1rem;
 }
