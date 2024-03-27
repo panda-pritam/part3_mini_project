@@ -115,7 +115,7 @@ function App() {
         </select>
       </div>
 
-      {selectedCountries && selectedState && selectedCity ? (
+      {/* {selectedCountries && selectedState && selectedCity ? (
         <div className="testDiv">
           <span className="text">You Selected</span>{" "}
           <span className="city"> {selectedCity}</span>,{" "}
@@ -125,6 +125,15 @@ function App() {
         </div>
       ) : (
         ""
+      )} */}
+      {selectedCity && (
+        <h2>
+          You Selected <span className="city"> {selectedCity}</span>,{" "}
+          <span className="state">
+            {" "}
+            {selectedState}, {selectedCountries}
+          </span>
+        </h2>
       )}
     </div>
   );
