@@ -128,7 +128,8 @@ function App() {
       )} */}
       {selectedCity && (
         <h2>
-          You Selected <span className="city"> {selectedCity},</span>{" "}
+          You Selected <span className="city"> {selectedCity}</span>
+          {", "}
           <span className="state">
             {" "}
             {selectedState}, {selectedCountries}
