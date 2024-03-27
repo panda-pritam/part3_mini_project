@@ -8,15 +8,18 @@
 .city {
   font-size: 30px;
   font-weight: bolder;
+  display: inline-block;
 }
 .state {
   font-size: 24px;
   font-weight: bold;
   color: #888;
+  display: inline-block;
 }
 .text {
   font-size: 24px;
   font-weight: 500;
+  display: inline-block;
 }
 select {
   margin-right: 8px;
