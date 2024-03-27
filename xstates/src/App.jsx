@@ -98,7 +98,7 @@ function App() {
         <select
           onChange={(e) => {
             if (e.target.value !== "Select City") {
-              setselectedCity(e.target.value);
+              setselectedCity((prev) => e.target.value);
             }
           }}
           disabled={!selectedState}
