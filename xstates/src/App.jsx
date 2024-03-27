@@ -114,19 +114,18 @@ function App() {
             : ""}
         </select>
       </div>
-      <div>
-        {selectedCountries && selectedState && selectedCity ? (
-          <div className="testDiv">
-            <span className="text">You Selected</span>{" "}
-            <span className="city"> {selectedCity},</span>{" "}
-            <span className="state">
-              {selectedState}, {selectedCountries}
-            </span>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+
+      {selectedCountries && selectedState && selectedCity ? (
+        <div className="testDiv">
+          <span className="text">You Selected</span>{" "}
+          <span className="city"> {selectedCity}</span>,{" "}
+          <span className="state">
+            {selectedState}, {selectedCountries}
+          </span>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
