@@ -1,11 +1,14 @@
 .mainDiv {
   display: flex;
-  justify-content: center !important;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 2rem;
 }
-.cardbox {
+.countryCard {
+  width: 200px;
+  height: 180px;
   display: flex;
+  padding-top: 1rem;
   flex-direction: column !important;
   padding-left: 0px !important;
   /* justify-content: center; */

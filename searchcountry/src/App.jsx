@@ -23,7 +23,9 @@ function App() {
         .catch((err) => {
           console.log("err-> ", err);
         });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
   useEffect(() => {
     let list = [];
@@ -51,22 +53,16 @@ function App() {
           .catch((err) => {
             console.log("err-> ", err);
           });
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     }
   }, [searchText]);
   useEffect(() => {
     if (flagList.length) {
       let cardList = flagList.map((ele) => {
         return (
-          <Grid
-            item
-            xl={12 / 7}
-            lg={5}
-            md={4}
-            sm={3}
-            key={ele.name.common}
-            className="cardbox"
-          >
+          <div className="countryCard">
             <img
               src={ele.flags.png}
               alt={ele.flags.alt}
@@ -74,7 +70,7 @@ function App() {
               height="100px"
             />
             <h2 className="ctyName">{ele.name.common}</h2>
-          </Grid>
+          </div>
         );
       });
       setCardList(cardList);
@@ -86,6 +82,7 @@ function App() {
       <header>
         <input
           placeholder="Search for countries..."
+          type="text"
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
@@ -93,11 +90,7 @@ function App() {
           className="searchBox"
         />
       </header>
-      <div className="mainDiv">
-        <Grid container spacing={2}>
-          {cardList}
-        </Grid>
-      </div>
+      <div className="mainDiv">{cardList}</div>
     </div>
   );
 }
