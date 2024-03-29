@@ -15,7 +15,7 @@ function App() {
     )
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => console.log(err));
+      .catch((err) => alert("failed to fetch data."));
   }, []);
   useEffect(() => {
     if (data.length > 0) {
@@ -60,13 +60,13 @@ function App() {
       <h1>Employee Data Table</h1>
       <div className="tableDiv">
         <table>
-          <tr className="tableHeader">
+          <thead className="tableHeader">
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
-          </tr>
-          {rowList}
+          </thead>
+          <tbody>{rowList}</tbody>
         </table>
       </div>
       <div className="btnDiv">
