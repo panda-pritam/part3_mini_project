@@ -1,0 +1,34 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.tableDiv {
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+  background-color: rgb(57, 173, 100);
+  border: none;
+  color: white;
+  padding: 8px;
+}
+.btnDiv {
+  margin-top: 1rem;
+}
+.row {
+  padding: 8px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+.controlElement {
+  background-color: rgb(57, 173, 100);
+  border: none;
+  color: white;
+  padding: 8px;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
