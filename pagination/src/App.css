@@ -20,7 +20,8 @@ th {
 .btnDiv {
   margin-top: 1rem;
 }
-.row {
+.tr,
+td {
   padding: 8px !important;
   border-bottom: 1px solid #ddd !important;
 }
